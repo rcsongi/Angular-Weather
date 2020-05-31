@@ -1,0 +1,32 @@
+<div class="container">
+    <mat-card class="login-card">
+        <mat-card-header>
+            <mat-card-title class="login-title">Login</mat-card-title>
+        </mat-card-header>
+        
+        <form class="login">
+            <mat-form-field class="name" float-label="never">
+              <mat-label>Username</mat-label>
+              <input #name matInput placeholder="username" value="Username">
+            </mat-form-field>
+          
+            <mat-form-field class="password">
+                <mat-label>Password</mat-label>
+                <input #password type="password" matInput placeholder="username" value="Username">
+              </mat-form-field>
+          </form>
+          <div class="buttons" >
+            <button class = "login-button" mat-raised-button color="secondary"
+             (click) = "login(name.value, password.value)">Login</button>
+             <button class = "register-button" mat-raised-button color="secondary"
+             (click) = "register(name.value, password.value)">Register</button>
+          </div>
+    
+        </mat-card>
+</div>
+
+
+
+    
+ 
+  

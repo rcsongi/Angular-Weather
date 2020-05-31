@@ -1,0 +1,44 @@
+<div class="background">
+<div class="container2">
+    
+    
+        <ul class="container-1">
+            <div class="container1">
+            <div  (click) = "detail(city)" *ngFor=" let city of cities">
+
+            
+            <mat-card class="main-card" >
+                <mat-list-item class="name">{{city.name}}</mat-list-item> 
+                
+                <mat-list-item class="temp"><button  mat-raised-button color="secondary" 
+                    (click)="delete(city)">
+                    Delete
+                </button></mat-list-item>
+            
+ 
+            </mat-card>  
+        </div>
+        
+        <mat-card class="main-card">
+            <mat-list-item class="name">Add City</mat-list-item>
+            <mat-list-item class="temp">
+                <button  mat-raised-button color="secondary" 
+                (click)="add()">
+                Add
+                </button></mat-list-item> 
+          </mat-card>
+        
+    </div>
+        </ul>
+    </div>
+    
+    <app-weather-detail *ngIf="selectedCity" [forecast] = 'details' [current] = "selectedCity"> </app-weather-detail>
+    <div class="logOut">
+        <button mat-raised-button color="secondary" 
+        (click)="logOut()">
+        Log Out
+        </button>
+    </div>
+</div>
+
+

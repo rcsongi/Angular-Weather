@@ -1,0 +1,78 @@
+::ng-deep .mat-typography{
+    background-image: url("../../assets/weather.jpeg");
+}
+ .mat-card-header{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+
+}
+.login-title {
+    
+    font-size: xx-large;
+}
+.login-card {
+    background-color: darkviolet;
+    border-radius: 40px;
+    opacity: 0.9;
+    width: 50vw;
+    height: auto;
+    display: flex;
+    color: black;
+    font-size: x-large;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    position: relative;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    
+
+  }
+  .login mat-label {
+        color: black;
+        font-size: x-large;
+  }
+  .login .name {
+  
+    color: black;
+    width: 100%;
+}
+.login .password {
+    color: black;
+    width: 100%;
+}
+  
+ 
+  button {
+      position: relative;
+      margin-top: 10px;
+      margin-right: 10px;
+      border-radius: 20px;
+    
+  }
+  .buttons {
+      width: 40vw;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-around;
+      
+      
+  }
+  ::ng-deep .mat-snack-bar-container{
+      background-color: darkmagenta !important;
+      color: pink;
+  }

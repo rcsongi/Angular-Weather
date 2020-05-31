@@ -1,0 +1,49 @@
+.weather-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+h2 {
+    width: auto;
+    font-size: xx-large;
+    
+}
+::ng-deep .mat-list-item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.ezmarjo {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.city-card {
+    background-color: grey;
+    opacity: 0.85;
+    width: 80vw;
+    height: auto;
+    display: flex;
+    color: black;
+    font-size: x-large;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    border-radius: 50px;
+    margin-bottom: 5vh;
+
+}
+
+::ng-deep ngx-charts-line-chart {
+    font-size: x-large;
+    font-weight: 600;
+    
+    
+}
